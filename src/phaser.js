@@ -30,13 +30,32 @@ var Phaser = {
     GameObjects: require('./gameobjects'),
     // Geom: require('./geom'),
     // Input: require('./input'),
-    Loader: require('./loader'),
+    // Loader: require('./loader'),
+    Loader: {
+
+        FileTypes: require('./loader/filetypes'),
+    
+        File: require('./loader/File'),
+        FileTypesManager: require('./loader/FileTypesManager'),
+        // GetURL: require('./loader/GetURL'),
+        LoaderPlugin: require('./loader/LoaderPlugin'),
+        // MergeXHRSettings: require('./loader/MergeXHRSettings'),
+        MultiFile: require('./loader/MultiFile'),
+        // XHRLoader: require('./loader/XHRLoader'),
+        // XHRSettings: require('./loader/XHRSettings')
+    
+    },
     // Math: require('./math'),
     Physics: {
         Matter: require('./physics/matter-js')
     },
     // Plugins: require('./plugins'),
-    Renderer: require('./renderer'),
+    // Renderer: require('./renderer'),
+    Renderer: {
+        Canvas: require('./renderer/canvas'),
+        // Snapshot: require('./renderer/snapshot'),
+        WebGL: require('./renderer/webgl')
+    },
     Scene: require('./scene/Scene'),
     Scenes: require('./scene'),
     // Sound: require('./sound'),
@@ -44,8 +63,8 @@ var Phaser = {
     Textures: require('./textures'),
     Tilemaps: require('./tilemaps'),
     Time: require('./time'),
-    // Tweens: require('./tweens'),
-    Utils: require('./utils')
+    Tweens: require('./tweens'),
+    // Utils: require('./utils')
 
 };
 
