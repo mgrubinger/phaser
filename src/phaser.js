@@ -15,34 +15,36 @@ var Extend = require('./utils/object/Extend');
 
 var Phaser = {
 
-    Actions: require('./actions'),
-    Animations: require('./animations'),
-    Cache: require('./cache'),
+    // Actions: require('./actions'),
+    // Animations: require('./animations'),
+    // Cache: require('./cache'),
     Cameras: require('./cameras'),
-    Class: require('./utils/Class'),
+    // Class: require('./utils/Class'),
     Create: require('./create'),
-    Curves: require('./curves'),
-    Data: require('./data'),
-    Display: require('./display'),
-    DOM: require('./dom'),
+    // Curves: require('./curves'),
+    // Data: require('./data'),
+    // Display: require('./display'),
+    // DOM: require('./dom'),
     Events: require('./events'),
     Game: require('./boot/Game'),
     GameObjects: require('./gameobjects'),
-    Geom: require('./geom'),
-    Input: require('./input'),
+    // Geom: require('./geom'),
+    // Input: require('./input'),
     Loader: require('./loader'),
-    Math: require('./math'),
-    Physics: require('./physics'),
-    Plugins: require('./plugins'),
+    // Math: require('./math'),
+    Physics: {
+        Matter: require('./physics/matter-js')
+    },
+    // Plugins: require('./plugins'),
     Renderer: require('./renderer'),
     Scene: require('./scene/Scene'),
     Scenes: require('./scene'),
-    Sound: require('./sound'),
-    Structs: require('./structs'),
+    // Sound: require('./sound'),
+    // Structs: require('./structs'),
     Textures: require('./textures'),
     Tilemaps: require('./tilemaps'),
     Time: require('./time'),
-    Tweens: require('./tweens'),
+    // Tweens: require('./tweens'),
     Utils: require('./utils')
 
 };
@@ -51,15 +53,15 @@ var Phaser = {
 
 if (typeof PLUGIN_CAMERA3D)
 {
-    Phaser.Cameras.Sprite3D = require('../plugins/camera3d/src');
-    Phaser.GameObjects.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3D');
-    Phaser.GameObjects.Factories.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DFactory');
-    Phaser.GameObjects.Creators.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DCreator');
+    // Phaser.Cameras.Sprite3D = require('../plugins/camera3d/src');
+    // Phaser.GameObjects.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3D');
+    // Phaser.GameObjects.Factories.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DFactory');
+    // Phaser.GameObjects.Creators.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DCreator');
 }
 
 if (typeof PLUGIN_FBINSTANT)
 {
-    Phaser.FacebookInstantGamesPlugin = require('../plugins/fbinstant/src/FacebookInstantGamesPlugin');
+    // Phaser.FacebookInstantGamesPlugin = require('../plugins/fbinstant/src/FacebookInstantGamesPlugin');
 }
 
 //   Merge in the consts
